@@ -1,0 +1,34 @@
+﻿<Window x:Class="MSNMineSweeper.PlayerName"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="PlayerName" Height="400" Width="300" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <StackPanel>
+        <Image Source="img/Flags.jpg" />
+        <TextBlock TextWrapping="Wrap" TextAlignment="Center" Background="Black" Foreground="White" FontSize="15" Padding="10">
+            <LineBreak></LineBreak>
+            This application is dedicated to the memory of the great time when we played MSN minesweeper together.<LineBreak>
+            </LineBreak>
+            <LineBreak></LineBreak>
+            --Yiping 2013
+            <LineBreak></LineBreak>
+        </TextBlock>
+        <TextBlock></TextBlock>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Content="RED" Grid.Column="0" Foreground="Red"></Label>
+            <TextBox Grid.Column="1" Text="洛神" Name="PlayerRed"></TextBox>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Content="BLUE" Grid.Column="0" Foreground="Blue"></Label>
+            <TextBox Grid.Column="1" Text="西施" Name="PlayerBlue"></TextBox>
+        </Grid>
+        <Button Content="Start!" Click="StartGame"></Button>
+    </StackPanel>
+</Window>
